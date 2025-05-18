@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Registration</title>
+    <link href="logo-maabc-transparent-25.ico" rel="icon">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="script.js" type="module"></script>
+    <style>
+      #sex:first-child {
+        color: orange;
+      }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <img id="logo" src="logo-maabc-transparent-25.png" alt="MAABC Logo">
+        <p id="head-text">Mt. Apo Alliance Bible College</p>
+    </header>
+    <!-- FORM -->
+    <main>
+        <!-- form title -->
+        <h1>Registration Form</h1>
+        <!-- form -->
+        <form action="/submit" method="post">
+          <!-- information 1 -->
+          <div id="info-1" class="form-div">
+            <!-- name -->
+            <fieldset>
+                <legend>FULL NAME</legend>
+                <input type="text" placeholder="Last Name" required name="last-name">
+                <input type="text" placeholder="First Name" required name="first-name">
+                <input type="text" placeholder="Middle Name" name="middle-name">
+                <input type="text" placeholder="Suffix" name="suffix-name">
+            </fieldset>
+            <!-- address, contact number -->
+            <fieldset>
+                <legend>ADDRESS & CONTACT NUMBER</legend>
+                <textarea placeholder="Address" required name="adress"></textarea>
+                <input placeholder="Phone Number" type="tel" maxlength="11" required name="contact-number">
+            </fieldset>
+            <!-- birth information -->
+            <fieldset id="field-birthdate">
+                <legend>BIRTH DATE</legend>
+                <input placeholder="Year" id="birth-year" type="text" pattern="\d{4,4}" required name="birth-year">
+                <input placeholder="Month" id="birth-month" type="text" pattern="\w{3,9}" required name="birth-month">
+                <input placeholder="Day" id="birth-day" type="text" pattern="\d{1,2}" required name="birth-day">
+            </fieldset>
+            <!-- sex -->
+            <fieldset>
+                <legend>SEX</legend>
+                <div class="radio-box">
+                    <label for="sex-male">
+                        <input id="sex-male" required type="radio" name="sex" value="male">
+                        <span>Male</span>
+                    </label>
+                    <label for="sex-female">
+                        <input id="sex-female" type="radio" name="sex" value="female">
+                        <span>Female</span>
+                    </label>
+                </div>
+            </fieldset>
+            <!-- tribe & civil status -->
+            <fieldset>
+                <legend>TRIBE</legend>
+                <input placeholder="Tribe" type="text" required name="tribe">
+            </fieldset>
+            <fieldset>
+                <legend>CIVIL STATUS</legend>
+                <div class="radio-box">
+                    <label for="cs-single">
+                        <input id="cs-single" required type="radio" name="civil-status" value="Single">
+                        <span>Single</span>
+                    </label>
+                    <label for="cs-married">
+                        <input id="cs-married" type="radio" name="civil-status" value="Married">
+                        <span>Married</span>
+                    </label>
+                </div>
+            </fieldset>
+          </div>
+
+          <!-- information 2 -->
+          <div id="info-2" class="form-div">
+            <!-- church background -->
+            <fieldset>
+                <legend>CHURCH BACKGROUND</legend>
+                <input placeholder="Home Church" type="text" name="home-church">
+                <input placeholder="District" type="text" required name="church-district">
+            </fieldset>
+            <!-- educational attainment -->
+            <fieldset>
+                <legend>HIGHEST EDUCATIONAL ATTAINMENT</legend>
+                <select id="select-education" class="placeholder" required name="education">
+                    <option value="" selected>Please Select</option>
+                    <option value="Junior High School">Junior High School</option>
+                    <option value="Senior High School">Senior High School</option>
+                    <option value="College Undergraduate">College Undergraduate</option>
+                    <option value="College Graduate">College Graduate</option>
+                    <option value="Vocational Course">Vocational Course</option>
+                </select>
+            </fieldset>
+            <!-- parent/guardian -->
+            <fieldset>
+                <legend>PARENTS / GUARDIAN</legend>
+                <input placeholder="Name (at least one)" type="text" required name="parent-guardian-1">
+                <input placeholder="Name" type="text" name="parent-guardian-2">
+            </fieldset>
+          </div>
+
+          <!-- information 3 -->
+          <div id="info-3" class="form-div">
+            <fieldset>
+                <legend>E-MAIL</legend>
+                <input placeholder="E-mail Address" type="text" name="email">
+            </fieldset>
+            <fieldset>
+                <legend>FACEBOOK ACCOUNT</legend>
+                <input placeholder="Profile Name" type="text" name="fb">
+            </fieldset>
+          </div>
+
+            <!-- submit -->
+            <button id="btn-submit" type="submit">Submit</button>
+        </form>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <p>Copyright &copy; <span id="current-year"></span> MAABC. Some Rights Reserved.</p>
+    </footer>
+</body>
+</html>

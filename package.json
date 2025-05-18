@@ -1,0 +1,12 @@
+{
+  "name": "maabcenrolmentform-2",
+  "version": "2.0.0",
+  "description": "A web form of the Mt. Apo Alliance Bible College's online registration of the May 2025 enrolment.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eric Ray Saladar",
+  "license": "ISC"
+}
