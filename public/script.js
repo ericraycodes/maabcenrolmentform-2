@@ -16,8 +16,6 @@ const addCurrentYear = (element) => {
 }
 
 
-
-
 // PAGE LOAD
 document.addEventListener("DOMContentLoaded", (event) => {
     console.log("PAGE LOAD:", event);

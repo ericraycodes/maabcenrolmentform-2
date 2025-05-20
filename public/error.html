@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Error</title>
+    <link href="images/logo-maabc-transparent-25.ico" rel="icon">
+    <link type="text/css" rel="stylesheet" href="styles/confirmation.css">
+</head>
+<body>
+    <div id="errorDiv">
+        <h1>An error has occured!</h1>
+        <p>Kindly check your network connection.</p>
+        <p>Please try again.</p>
+        <button id="goBack">Go back to Registration form</button>
+    </div>
+    <script defer>
+        document.getElementById("goBack").addEventListener("click", () => {
+            history.back();
+        });
+    </script>
+</body>
+</html>

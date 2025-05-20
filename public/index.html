@@ -5,19 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Registration</title>
-    <link href="logo-maabc-transparent-25.ico" rel="icon">
-    <link type="text/css" rel="stylesheet" href="style.css">
+    <link href="images/logo-maabc-transparent-25.ico" rel="icon">
+    <link type="text/css" rel="stylesheet" href="styles/style.css">
     <script src="script.js" type="module"></script>
-    <style>
-      #sex:first-child {
-        color: orange;
-      }
-    </style>
 </head>
 <body>
     <!-- HEADER -->
     <header>
-        <img id="logo" src="logo-maabc-transparent-25.png" alt="MAABC Logo">
+        <img id="logo" src="images/logo-maabc-transparent-25.png" alt="MAABC Logo">
         <p id="head-text">Mt. Apo Alliance Bible College</p>
     </header>
     <!-- FORM -->
@@ -39,7 +34,7 @@
             <!-- address, contact number -->
             <fieldset>
                 <legend>ADDRESS & CONTACT NUMBER</legend>
-                <textarea placeholder="Address" required name="adress"></textarea>
+                <textarea placeholder="Address" required name="address"></textarea>
                 <input placeholder="Phone Number" type="tel" maxlength="11" required name="contact-number">
             </fieldset>
             <!-- birth information -->
@@ -54,11 +49,11 @@
                 <legend>SEX</legend>
                 <div class="radio-box">
                     <label for="sex-male">
-                        <input id="sex-male" required type="radio" name="sex" value="male">
+                        <input id="sex-male" required type="radio" name="sex" value="MALE">
                         <span>Male</span>
                     </label>
                     <label for="sex-female">
-                        <input id="sex-female" type="radio" name="sex" value="female">
+                        <input id="sex-female" type="radio" name="sex" value="FEMALE">
                         <span>Female</span>
                     </label>
                 </div>
@@ -72,11 +67,11 @@
                 <legend>CIVIL STATUS</legend>
                 <div class="radio-box">
                     <label for="cs-single">
-                        <input id="cs-single" required type="radio" name="civil-status" value="Single">
+                        <input id="cs-single" required type="radio" name="civil-status" value="SINGLE">
                         <span>Single</span>
                     </label>
                     <label for="cs-married">
-                        <input id="cs-married" type="radio" name="civil-status" value="Married">
+                        <input id="cs-married" type="radio" name="civil-status" value="MARRIED">
                         <span>Married</span>
                     </label>
                 </div>
