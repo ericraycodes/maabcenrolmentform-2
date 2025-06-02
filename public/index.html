@@ -40,8 +40,10 @@
             <!-- birth information -->
             <fieldset id="field-birthdate">
                 <legend>BIRTH DATE</legend>
-                <input placeholder="Year" id="birth-year" type="text" pattern="\d{4,4}" required name="birth-year">
-                <input placeholder="Month" id="birth-month" type="text" pattern="\w{3,9}" required name="birth-month">
+                <!-- <input placeholder="Year" id="birth-year" type="text" pattern="\d{4,4}" required name="birth-year"> -->
+                <input placeholder="Year" id="birth-year" type="tel" maxlength="4" minlength="4" required name="birth-year">
+                <!-- <input placeholder="Month" id="birth-month" type="text" pattern="\w{3,9}" required name="birth-month"> -->
+                <input placeholder="Month" id="birth-month" type="tel" maxlength="2" minlength="1" required name="birth-month">
                 <input placeholder="Day" id="birth-day" type="text" pattern="\d{1,2}" required name="birth-day">
             </fieldset>
             <!-- sex -->

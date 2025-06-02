@@ -3,8 +3,8 @@
 /* CALLBACKS */
 // remove the first option element
 const removeFirstOption = (ev) => {
-    console.log("remove first option:", ev.target[0]);
-    console.log("element", ev);
+    // console.log("remove first option:", ev.target[0]);
+    // console.log("element", ev);
     ev.target.classList.remove("placeholder");
     ev.target[0].remove();
     ev.target.removeEventListener("click", removeFirstOption);
